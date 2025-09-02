@@ -25,14 +25,16 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="max-w-[1920px] mx-auto">
+  <body
+    class="max-w-[1920px] mx-auto bg-[url('./assets/back.png')] bg-repeat"
+  >
     <header>
       <section
         class="md:h-[150px] py-6 px-[64px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] flex md:flex-row flex-col items-center justify-between li-font gap-4 md:gap-0"
       >
         <img
-          class="h-[80px] w-[80px]"
-          src="./assets/logo_back.svg"
+          class="h-[80px] w-[80px] drop-shadow-[0px_4px_12px_rgba(255,255,255,0.8)]"
+          src="./assets/logo.svg"
           alt="Moragacha Secondary School Logo"
         />
         <div
@@ -57,18 +59,98 @@
           </a>
         </div>
       </section>
-      <nav></nav>
+      <nav class="bg-white h-[60px] flex items-center px-[64px] shadow-md">
+        <div class="w-full hidden lg:block">
+          <ul class="flex gap-0.5 poppins-font font-medium text-[18px]">
+            <li class="group relative">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px] items-center"
+                >Home
+              </a>
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Administration
+                <i
+                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
+                ></i
+              ></a>
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Academics Info
+                <i
+                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
+                ></i
+              ></a>
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Download Corner
+                <i
+                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
+                ></i
+              ></a>
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Gallery
+                <i
+                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
+                ></i
+              ></a>
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Notice & Events
+                <i
+                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Career</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section
-        class="latest-notices-runner h-[60px] bg-[#01427A] flex lg:pl-[64px]"
+        class="latest-notices-runner h-[50px] bg-[#01427A] flex lg:pl-[64px] poppins-font"
       >
         <aside class="lg:w-[10%] w-[30%]">
-            <div class="bg-slate-100 w-auto h-[100%] text-center flex items-center justify-center">
-                <h2 class="text-[#01427A] text-[24px] font-bold  md:px-0">Latest Notices</h2>
-            </div>
+          <div
+            class="bg-white w-auto h-[100%] text-center flex items-center justify-center"
+          >
+            <h2 class="text-[#01427A] text-[20px] font-bold md:px-0">
+              Latest Notices
+            </h2>
+          </div>
         </aside>
         <aside class="w-[90%] items-center flex justify-center px-5">
           <marquee
-            class="text-[#FFFFFF] text-[20px] font-medium"
+            class="text-[#FFFFFF] text-[18px] font-medium"
             behavior=""
             direction=""
             scrollamount="15"
@@ -76,27 +158,147 @@
             onmouseover="this.stop()"
             onmouseout="this.start()"
           >
-          <div class="flex gap-5">
-              <p>
-                  Welcome to Moragacha Secondary School! 
-                </p>
-                <p><i class="fa-solid fa-circle"></i></p>
-              <p>
-                  Welcome to Moragacha Secondary School! 
-                </p>
-                <p><i class="fa-solid fa-circle"></i></p>
-              <p>
-                  Welcome to Moragacha Secondary School!  
-                </p>
-
-          </div>
-            
-            </marquee
+            <div class="flex gap-5">
+              <p>Welcome to Moragacha Secondary School!</p>
+              <p><i class="fa-solid fa-circle"></i></p>
+              <p>Welcome to Moragacha Secondary School!</p>
+              <p><i class="fa-solid fa-circle"></i></p>
+              <p>Welcome to Moragacha Secondary School!</p>
+            </div>
+          </marquee>
+        </aside>
+      </section>
+      <section class="hero-section mt-7 px-[64px] flex">
+        <aside class="w-[65%]">
+          <div
+            class="carousel w-full h-[480px] border-[1px] border-[#01427A] rounded-md"
           >
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
+                <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
+                <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
+                <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
+                <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside
+          class="w-[35%] border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
+        >
+          <div
+            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+          >
+            <h2 class="li-font flex items-center gap-3">
+              <i class="fa-solid fa-bullhorn"></i> Notice Board
+            </h2>
+          </div>
         </aside>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="px-[64px] mt-7">
+      <section class="flex">
+        <aside
+          class="flex-1 border-[1px] border-[#01427A] rounded-md h-[480px] bg-white shadow-md"
+        >
+          <div
+            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+          >
+            <h2 class="li-font flex items-center gap-3">
+              <i class="fa-solid fa-message"></i> A short message of Chairman
+            </h2>
+          </div>
+        </aside>
+        <aside
+          class="flex-1 border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
+        >
+          <div
+            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+          >
+            <h2 class="li-font flex items-center gap-3">
+              <i class="fa-solid fa-message"></i> A short message of Principal
+            </h2>
+          </div>
+        </aside>
+      </section>
+      <section class="flex mt-7">
+        <aside
+          class="w-[65%] border-[1px] border-[#01427A] rounded-md h-[480px] bg-white shadow-md"
+        >
+          <div
+            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+          >
+            <h2 class="li-font flex items-center gap-3">
+              <i class="fa-brands fa-42-group"></i> Our History
+            </h2>
+          </div>
+        </aside>
+        <aside
+          class="w-[35%] border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
+        >
+          <div
+            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+          >
+            <h2 class="li-font flex items-center gap-3">
+              <i class="fa-solid fa-link"></i> Important Links
+            </h2>
+          </div>
+        </aside>
+      </section>
+      <section
+        class="w-full border-[1px] border-[#01427A] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md"
+      ></section>
+      <section
+        class="w-full bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md"
+      ></section>
+    </main>
+    <footer class="mt-[50px]">
+      <div class="bg-[url('./assets/footer.png')] h-[200px] bg-cover bg-center"></div>
+      <section
+        class=" bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] h-[480px] p-5 bg-white shadow-md"
+      ></section>
+    </footer>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
