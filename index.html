@@ -6,8 +6,6 @@
     <title>Home | Moragacha Secondary School</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- DaisyUI -->
     <link
@@ -15,6 +13,9 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome -->
     <link
@@ -25,12 +26,11 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body
-    class="max-w-[1920px] mx-auto bg-[url('./assets/back.png')] bg-repeat"
-  >
+  <body class="max-w-[1920px] mx-auto bg-[url('./assets/back.png')] bg-repeat">
     <header>
+      <!-- Identity Section  -->
       <section
-        class="md:h-[150px] py-6 px-[64px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] flex md:flex-row flex-col items-center justify-between li-font gap-4 md:gap-0"
+        class="md:h-[150px] py-6 px-5 lg:px-[64px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex md:flex-row flex-col items-center justify-between li-font gap-4 md:gap-0"
       >
         <img
           class="h-[80px] w-[80px] drop-shadow-[0px_4px_12px_rgba(255,255,255,0.8)]"
@@ -59,214 +59,398 @@
           </a>
         </div>
       </section>
-      <nav class="bg-white h-[60px] flex items-center px-[64px] shadow-md">
-        <div class="w-full hidden lg:block">
-          <ul class="flex gap-0.5 poppins-font font-medium text-[18px]">
-            <li class="group relative">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px] items-center"
-                >Home
-              </a>
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Administration
-                <i
-                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
-                ></i
-              ></a>
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Academics Info
-                <i
-                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
-                ></i
-              ></a>
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Download Corner
-                <i
-                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
-                ></i
-              ></a>
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Gallery
-                <i
-                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
-                ></i
-              ></a>
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Notice & Events
-                <i
-                  class="fa-solid fa-caret-down group-hover:rotate-180 transition-transform duration-200"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Career</a
+
+      <!-- Navigation Section  -->
+      <nav class="mx-auto">
+        <div class="navbar bg-base-100 shadow-sm pr-5 lg:px-[63px]">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-[#FFFFFF] text-[#658CC2] hover:bg-[#658CC2] p-3 rounded-[5px]"
-                >Contact</a
-              >
-            </li>
-          </ul>
+                <li>
+                  <a
+                    class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] rounded-[5px] text-[16px] font-medium"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] rounded-[5px] text-[16px] font-medium"
+                    >Parent</a
+                  >
+                  <ul class="p-2">
+                    <li>
+                      <a
+                        class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] rounded-[5px] text-[16px] font-medium"
+                        >Submenu 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] rounded-[5px] text-[16px] font-medium"
+                        >Submenu 2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a
+                    class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Home</a
+                  >
+                </li>
+                <li class="group relative">
+                  <a
+                    class="group-hover:text-[#FFFFFF] text-[#013223] group-hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Administration
+                    <i
+                      class="fa-solid fa-chevron-right text-[8px] rotate-90 group-hover:-rotate-90 duration-200"
+                    ></i
+                  ></a>
+
+                  <ul
+                    class="p-2 hidden group-hover:block absolute bg-[#fff] top-[51px] border-[1px] border-[#013223bd] rounded-sm w-[170px] left-0 z-30"
+                  >
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Principal</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Vice Principal</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Teacher</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Staff</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a
+                    class="group-hover:text-[#FFFFFF] text-[#013223] group-hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Academics Info
+                    <i
+                      class="fa-solid fa-chevron-right text-[8px] rotate-90 group-hover:-rotate-90 duration-200"
+                    ></i
+                  ></a>
+
+                  <ul
+                    class="p-2 hidden group-hover:block absolute bg-[#fff] top-[51px] border-[1px] border-[#013223bd] rounded-sm w-[200px] left-0 z-30"
+                  >
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>History</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Dress Code</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Public Exam Result</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a
+                    class="group-hover:text-[#FFFFFF] text-[#013223] group-hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Download Corner
+                    <i
+                      class="fa-solid fa-chevron-right text-[8px] rotate-90 group-hover:-rotate-90 duration-200"
+                    ></i
+                  ></a>
+
+                  <ul
+                    class="p-2 hidden group-hover:block absolute bg-[#fff] top-[51px] border-[1px] border-[#013223bd] rounded-sm w-[200px] left-0 z-30"
+                  >
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Forms</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Other Documents</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a
+                    class="group-hover:text-[#FFFFFF] text-[#013223] group-hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Gallery<i
+                      class="fa-solid fa-chevron-right text-[8px] rotate-90 group-hover:-rotate-90 duration-200"
+                    ></i
+                  ></a>
+
+                  <ul
+                    class="p-2 hidden group-hover:block absolute bg-[#fff] top-[51px] border-[1px] border-[#013223bd] rounded-sm w-[200px] left-0 z-30"
+                  >
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Video Gallery</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Photo Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a
+                    class="group-hover:text-[#FFFFFF] text-[#013223] group-hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Notices & Events<i
+                      class="fa-solid fa-chevron-right text-[8px] rotate-90 group-hover:-rotate-90 duration-200"
+                    ></i
+                  ></a>
+
+                  <ul
+                    class="p-2 hidden group-hover:block absolute bg-[#fff] top-[51px] border-[1px] border-[#013223bd] rounded-sm w-[200px] left-0 z-30"
+                  >
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Notices</a>
+                    </li>
+                    <li
+                      class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] text-[16px] font-semibold rounded-sm"
+                    >
+                      <a>Events</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Career</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#FFFFFF] text-[#013223] hover:bg-[#013223] p-3 rounded-[5px] text-[18px] font-medium"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-[18px] text-white font-bold bg-[#013223] rounded-md active:from-black active:via-black active:to-black"
+            >
+              Login
+            </a>
+          </div>
         </div>
       </nav>
-      <section
-        class="latest-notices-runner h-[50px] bg-[#01427A] flex lg:pl-[64px] poppins-font"
-      >
-        <aside class="lg:w-[10%] w-[30%]">
-          <div
-            class="bg-white w-auto h-[100%] text-center flex items-center justify-center"
-          >
-            <h2 class="text-[#01427A] text-[20px] font-bold md:px-0">
-              Latest Notices
-            </h2>
-          </div>
-        </aside>
-        <aside class="w-[90%] items-center flex justify-center px-5">
+
+      <!-- Notice Runner  -->
+      <div class="bg-[#013223] h-[60px] pl-5 lg:pl-[64px] flex items-center">
+        <div class="bg-white h-full w-fit flex items-center px-3">
+          <h2 class="text-[16px] md:text-[18px] font-bold text-[#013223]">
+            Latest Notice
+          </h2>
+        </div>
+        <div class="h-full flex items-center justify-center flex-1">
           <marquee
-            class="text-[#FFFFFF] text-[18px] font-medium"
             behavior=""
             direction=""
-            scrollamount="15"
-            scrolldelay="150"
-            onmouseover="this.stop()"
-            onmouseout="this.start()"
+            class="text-[#FFFFFF] text-[17px] font-semibold h-full flex items-center"
+            onmouseover="this.stop();"
+            onmouseout="this.start();"
           >
-            <div class="flex gap-5">
-              <p>Welcome to Moragacha Secondary School!</p>
-              <p><i class="fa-solid fa-circle"></i></p>
-              <p>Welcome to Moragacha Secondary School!</p>
-              <p><i class="fa-solid fa-circle"></i></p>
-              <p>Welcome to Moragacha Secondary School!</p>
-            </div>
+            <div id="noticeRunner" class="flex items-center gap-5"></div>
           </marquee>
-        </aside>
-      </section>
-      <section class="hero-section mt-7 px-[64px] flex">
-        <aside class="w-[65%]">
+        </div>
+      </div>
+
+      <!-- slider & Notice  -->
+      <section
+        class="hero-section mt-7 px-5 lg:px-[64px] flex flex-col lg:flex-row gap-5"
+      >
+        <!-- Slider section  -->
+        <aside class="w-full lg:w-[65%] content-center">
           <div
-            class="carousel w-full h-[480px] border-[1px] border-[#01427A] rounded-md"
+            class="carousel w-full max-h-[480px] aspect-[16/9] overflow-hidden rounded-md shadow-md"
           >
-            <div id="slide1" class="carousel-item relative w-full">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full h-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+                class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between"
               >
-                <button onclick="showSlide(4)" class="btn btn-circle">❮</button>
-                <button onclick="showSlide(2)" class="btn btn-circle">❯</button>
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full h-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+                class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between"
               >
-                <button onclick="showSlide(1)" class="btn btn-circle">❮</button>
-                <button onclick="showSlide(3)" class="btn btn-circle">❯</button>
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide3" class="carousel-item relative w-full">
+            <!-- Slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full h-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+                class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between"
               >
-                <button onclick="showSlide(2)" class="btn btn-circle">❮</button>
-                <button onclick="showSlide(4)" class="btn btn-circle">❯</button>
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide4" class="carousel-item relative w-full">
+            <!-- Slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full h-full">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+                class="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between"
               >
-                <button onclick="showSlide(3)" class="btn btn-circle">❮</button>
-                <button onclick="showSlide(1)" class="btn btn-circle">❯</button>
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
           </div>
         </aside>
+
+        <!-- Notice Board -->
         <aside
-          class="w-[35%] border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
+          class="w-full lg:w-[35%] border border-[#013223] rounded-md h-[480px] bg-white shadow-md"
         >
+          <!-- Header -->
           <div
-            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+            class="h-[50px] sm:h-[60px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white font-medium text-lg sm:text-xl md:text-2xl flex items-center px-4 rounded-t-md"
           >
-            <h2 class="li-font flex items-center gap-3">
+            <h2 class="li-font flex items-center gap-2 sm:gap-3">
               <i class="fa-solid fa-bullhorn"></i> Notice Board
             </h2>
           </div>
+
+          <!-- Marquee -->
+          <marquee
+            direction="up"
+            class="h-[410px] mt-1"
+            onmouseover="this.stop();"
+            onmouseout="this.start();"
+          >
+            <div
+              id="noticeContainer"
+              class="notice-container p-3 sm:p-5 flex flex-col gap-3"
+            >
+              <!-- Notices go here -->
+            </div>
+          </marquee>
         </aside>
       </section>
     </header>
-    <main class="px-[64px] mt-7">
-      <section class="flex">
+    <main class="px-5 lg:px-[64px] mt-7">
+      <section class="flex flex-col md:flex-row">
         <aside
-          class="flex-1 border-[1px] border-[#01427A] rounded-md h-[480px] bg-white shadow-md"
+          class="flex-1 border-[1px] border-[#013223] rounded-md bg-white shadow-md"
         >
           <div
-            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+            class="h-[60px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
           >
             <h2 class="li-font flex items-center gap-3">
               <i class="fa-solid fa-message"></i> A short message of Chairman
             </h2>
           </div>
+          <div
+            class="bg-white m-5 p-5 shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-md justify-items-center"
+          >
+            <img id="chairmanImage"
+              class="rounded-full h-[200px] w-[200px] border-[5px] border-[#013223]"
+              src=""
+              alt=""
+            />
+            <h1 id="chairmanName" class="text-[18px] font-bold text-[#013223] mt-5"></h1>
+            <p id="chairmanMessage" class="text-[#013223] font-medium mt-3">
+
+            </p>
+          </div>
         </aside>
         <aside
-          class="flex-1 border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
+          class="flex-1 border-[1px] border-[#013223] rounded-md md:ml-5 mt-5 md:mt-0 bg-white shadow-md"
         >
           <div
-            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+            class="h-[60px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
           >
             <h2 class="li-font flex items-center gap-3">
               <i class="fa-solid fa-message"></i> A short message of Principal
             </h2>
           </div>
+          <div
+            class="bg-white m-5 p-5 shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-md justify-items-center"
+          >
+            <img id="principalImage"
+              class="rounded-full h-[200px] w-[200px] border-[5px] border-[#013223]"
+              src=""
+              alt=""
+            />
+            <h1 id="principalName" class="text-[18px] font-bold text-[#013223] mt-5"></h1>
+            <p id="principalMessage" class="text-[#013223] font-medium mt-3">
+
+            </p>
+          </div>
         </aside>
       </section>
-      <section class="flex mt-7">
+      <section class="flex mt-7 hidden">
         <aside
           class="w-[65%] border-[1px] border-[#01427A] rounded-md h-[480px] bg-white shadow-md"
         >
           <div
-            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+            class="h-[60px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
           >
             <h2 class="li-font flex items-center gap-3">
               <i class="fa-brands fa-42-group"></i> Our History
@@ -277,7 +461,7 @@
           class="w-[35%] border-[1px] border-[#01427A] rounded-md h-[480px] ml-5 bg-white shadow-md"
         >
           <div
-            class="h-[60px] bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
+            class="h-[60px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] font-medium text-[24px] flex items-center px-4"
           >
             <h2 class="li-font flex items-center gap-3">
               <i class="fa-solid fa-link"></i> Important Links
@@ -286,16 +470,18 @@
         </aside>
       </section>
       <section
-        class="w-full border-[1px] border-[#01427A] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md"
+        class="w-full border-[1px] border-[#01427A] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md hidden"
       ></section>
       <section
-        class="w-full bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md"
+        class="w-full bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] rounded-md h-[480px] mt-7 p-5 bg-white shadow-md hidden"
       ></section>
     </main>
-    <footer class="mt-[50px]">
-      <div class="bg-[url('./assets/footer.png')] h-[200px] bg-cover bg-center"></div>
+    <footer class="mt-[50px] hidden">
+      <div
+        class="bg-[url('./assets/footer.png')] h-[200px] bg-cover bg-center"
+      ></div>
       <section
-        class=" bg-gradient-to-r from-[#01427A] via-[#3A6073] to-[#01427A] h-[480px] p-5 bg-white shadow-md"
+        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[480px] p-5 bg-white shadow-md"
       ></section>
     </footer>
 
